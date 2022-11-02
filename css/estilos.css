@@ -5,125 +5,65 @@
 }
 
 body{
-    background-color: grey;
+    background-image: url(../images/fondo/fondo_negro.jpg);
     font-family: 'Abel', sans-serif;
     font-size: 14px;
     text-align: justify;
     color: white;
 }
 
-/*INICIA HEADER*/
-#header{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    background-color: black;
-    margin: auto;
+.navbar-toggler{
+    font-size: 12px;
+}
+.navbar-brand{
+    font-family: 'Michroma', sans-serif;
+    font-size: 16px;
     text-transform: uppercase;
 }
-.header__h1{
-    flex: 50%;
-    width: 100vw;
-    font-family: 'Michroma', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    margin: 10px;
-}
-span{
-    font-family: 'Michroma', sans-serif;
-    font-size: 14px;
+.navbar-brand spam{
     color: yellow;
 }
-.header__navBar1{
-    display: flex;
-    background: black;
-    height: 80px;
-    width: 100vw;
-    text-align: center;  
-    justify-content: center;
+.nav-link:hover{
+    color: yellow;
 }
-.header__navBar1 li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+
+.btn-outline-success{
+    color: yellow;
+    border-color: yellow;
 }
-.header__navBar1 li a{
-    color: white;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.header__navBar1 li a:hover{
-    background: yellow;
+.btn-outline-success:hover{
     color: black;
-    transition: .5s;
+    background-color: yellow;
 }
-.header__redesSociales{
-    flex-direction: column;
-    padding: 25px;
+.btn{
+    background-color: yellow;
+    color: black;
 }
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
+
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.144);
+    margin: 20px 15px
+}
+.card-article{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    line-height: 80px;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
-}
-@media (max-width: 952px){
-    .header__navBar1 li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    .header__navBar1__enlaces{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    .header__navBar1 li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    .header__navBar1 li li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: red;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-}
-/*FIN HEADER*/
-
-
-#buscar{
-    padding: 0px opx;
-    width: 100%;
-    height: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 60px;
-}
-.buscar__container{
-    background-color: rgba(19, 18, 18, 0.284);
-    width: 100%;
-    padding: 0px 25px;
+    align-items: center;
+    margin: 15px 15px;
+    padding: 5px 15px;
 }
 
-
+.card-body{
+    padding: 10px;
+    margin: 15px 5px;
+}
+.h3{
+    font-family: 'Michroma', sans-serif;
+}
+.h3 span{
+    color: yellow;
+}
